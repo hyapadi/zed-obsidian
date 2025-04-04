@@ -1,0 +1,25 @@
+[package]
+name = "obsidian"
+version = "0.0.1"
+edition = "2021"
+publish = false
+
+[dependencies]
+gpui = { path = "../gpui" }
+markdown = { path = "../markdown" }
+editor = { path = "../editor" }
+fs = { path = "../fs" }
+project = { path = "../project" }
+workspace = { path = "../workspace" }
+language = { path = "../language" }
+rich_text = { path = "../rich_text" }
+theme = { path = "../theme" }
+ui = { path = "../ui" }
+
+anyhow = "1.0"
+log = "0.4"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tokio = { version = "1.32.0", features = ["full"] }
+futures = "0.3"
+petgraph = "0.6"
